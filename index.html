@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jin's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Intro Message -->
+    <div class="intro-message">
+        <h1>Hello, I'm a <span class="grad1">designer</span> and<br><span class="grad2">developer</span> passionate <br>about creating new things <br> that can help people.</h1>
+    </div>
+
+    <!-- Main Section -->
+    <div class="rs-cards-shelf">
+        <div class="as-l-container rs-cards-shelf-header">
+            <h2 class="rs-cards-shelf-mainheader">Click the card. <span class="gray">See what I've been working on recently.</span></h2>
+        </div>
+        <div class="rf-cards-scroller">
+            <!-- Navigation Buttons -->
+            <button id="scroll-left" class="scroll-button left-button">&#10094;</button>
+            <button id="scroll-right" class="scroll-button right-button">&#10095;</button>
+
+            <div class="rf-cards-scroller-crop">
+                <div class="rf-cards-scroller-content">
+                    <!-- Card -->
+                    <div class="rf-cards-scroller-itemview">
+                        <div class="rf-ccard">
+                            <div class="rf-ccard-img-full-wrapper">
+                                <img src="images/web.png" alt="ksea">
+                                <!-- Text Overlay -->
+                                <div class="rf-ccard-overlay">
+                                    <span class="first-txt">This Website</span><br>
+                                    <span class="second-txt">Designer and Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">HTML, CSS, JavaScript</div>
+                    </div>
+                    <!-- Card -->
+                    <div class="rf-cards-scroller-itemview">
+                        <div class="rf-ccard">
+                            <div class="rf-ccard-img-full-wrapper">
+                                <img src="images/vineyard.png">
+                                <!-- Text Overlay -->
+                                <div class="rf-ccard-overlay">
+                                    <span class="first-txt">Vineyard App UI/UX </span><br>
+                                    <span class="second-txt">iOS Club, Designer and Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">Swift, Figma, Github, Prototyping, App development</div>
+                    </div>
+                    <!-- Card -->
+                    <div class="rf-cards-scroller-itemview">
+                        <div class="rf-ccard">
+                            <div class="rf-ccard-img-full-wrapper">
+                                <img src="images/three.png" alt="ksea">
+                                <!-- Text Overlay -->
+                                <div class="rf-ccard-overlay">
+                                    <span class="first-txt">Three App UI</span><br>
+                                    <span class="second-txt">iOS Club, Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">Swift, Github, App development</div>
+                    </div>
+                    <!-- Card -->
+                    <div class="rf-cards-scroller-itemview">
+                        <div class="rf-ccard">
+                            <div class="rf-ccard-img-full-wrapper">
+                                <img src="images/musicode.png" alt="ksea">
+                                <!-- Text Overlay -->
+                                <div class="rf-ccard-overlay">
+                                    <span class="first-txt">Music and Coding</span><br>
+                                    <span class="second-txt">TAP, Student Researcher</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">UX Research, HCI, Python</div>
+                    </div>
+                    <!-- Card -->
+                    <div class="rf-cards-scroller-itemview">
+                        <div class="rf-ccard">
+                            <div class="rf-ccard-img-full-wrapper">
+                                <img src="images/ksea2.png" alt="ksea">
+                                <!-- Text Overlay -->
+                                <div class="rf-ccard-overlay">
+                                    <span class="first-txt">Design Template</span><br>
+                                    <span class="second-txt">KSEA, Promotional Director</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">Adobe Illustrator, User interview, Prototyping</div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="rf-cards-scroller-itemview">
+                        <div class="rf-ccard">
+                            <div class="rf-ccard-img-full-wrapper">
+                                <img src="images/filler.png">
+                                <!-- Text Overlay -->
+                                <div class="rf-ccard-overlay">
+                                    <span class="first-txt">IEQ Framework</span><br>
+                                    <span class="second-txt">WELab, Student Researcher</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">UX Research</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const scroller = document.querySelector('.rf-cards-scroller-crop');
+        const scrollLeftBtn = document.getElementById('scroll-left');
+        const scrollRightBtn = document.getElementById('scroll-right');
+        const cardElement = document.querySelector('.rf-cards-scroller-itemview');
+        const cardStyle = getComputedStyle(cardElement);
+        const cardWidth = cardElement.offsetWidth + parseInt(cardStyle.marginLeft) + parseInt(cardStyle.marginRight);
+    
+        scrollLeftBtn.addEventListener('click', () => {
+            scroller.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        });
+        scrollRightBtn.addEventListener('click', () => {
+            scroller.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        });
+    </script>    
+
+</body>
+</html>
