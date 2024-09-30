@@ -262,6 +262,12 @@ body {
     
 }
 
+@media (max-width: 590px) {
+    .rs-cards-shelf-mainheader {
+        white-space: pre-wrap;
+    }
+}
+
 @media (max-width: 480px) {
     .intro-message h1 {
         font-size: 31px;
@@ -308,7 +314,6 @@ body {
 
     .rs-cards-shelf-mainheader {
         font-size: 23px;
-        white-space: normal;
     }
 
     .card-footer {
