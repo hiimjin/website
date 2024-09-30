@@ -292,7 +292,7 @@ body {
     }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 411px) {
     .intro-message h1 {
         font-size: 27px;
     }
