@@ -253,17 +253,16 @@ body {
         line-height: 1.2;
         white-space: nowrap;
     }
-}
-
-/* Hide buttons on small screens or adjust their size */
-@media (max-width: 480px) {
+    /* Hide buttons on small screens or adjust their size */
     .scroll-button {
         display: none;
         visibility: hidden;
         width: 0;
         height: 0;
     }
+}
 
+@media (max-width: 480px) {
     .intro-message h1 {
         font-size: 31px;
     }
