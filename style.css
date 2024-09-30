@@ -295,14 +295,25 @@ body {
 @media (max-width: 411px) {
     .intro-message h1 {
         font-size: 27px;
+        margin-left: -40px;
+    }
+
+    .scroll-button {
+        transform: translateY(-100%);
+    }
+
+    .left-button {
+        left: 55px;
     }
 
     .rs-cards-shelf {
         margin-top: 255px; /* Brings it down */
+        margin-left: -40px;
+        max-width: 150%;
     }
 
     .rf-cards-scroller-itemview {
-        width: 75vw; /* Almost full width */
+        width: 83vw; /* Almost full width */
     }
 
     .rs-cards-shelf-mainheader {
