@@ -28,6 +28,11 @@ body {
     color: transparent;
 }
 
+.custombr {
+    display: none;
+}
+
+
 /* Intro */
 .intro-message {
     position: relative;
@@ -236,7 +241,6 @@ body {
     }
 }
 
-/* For screens 740px and smaller */
 @media (max-width: 633px) {
     .intro-message {
         position: absolute;
@@ -259,13 +263,15 @@ body {
         width: 0;
         height: 0;
     }
-    
-}
 
-@media (max-width: 590px) {
     .rs-cards-shelf-mainheader {
-        white-space: pre-wrap;
+        white-space: nowrap;
     }
+
+    .custombr {
+        display: inline;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -283,7 +289,6 @@ body {
 
     .rs-cards-shelf-mainheader {
         font-size: 24px;
-        white-space: normal;
     }
 
     .card-footer {
