@@ -277,10 +277,13 @@ body {
 @media (max-width: 480px) {
     .intro-message h1 {
         font-size: 31px;
+        margin-left: -40px;
     }
 
     .rs-cards-shelf {
         margin-top: 300px; /* Brings it down */
+        margin-left: -40px;
+        max-width: 150%;
     }
 
     .rf-cards-scroller-itemview {
@@ -304,13 +307,10 @@ body {
 
     .intro-message h1 {
         font-size: 27px;
-        margin-left: -40px;
     }
 
     .rs-cards-shelf {
         margin-top: 255px; /* Brings it down */
-        margin-left: -40px;
-        max-width: 150%;
     }
 
     .rf-cards-scroller-itemview {
