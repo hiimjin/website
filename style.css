@@ -287,9 +287,39 @@ body {
     .card-footer {
         font-size: 13px;
     }
+
+    .rf-ccard-overlay .second-txt {
+        font-size: 0px;
+    }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 410px) {
+    .intro-message h1 {
+        font-size: 27px;
+        white-space: normal;
+    }
+
+    .rs-cards-shelf {
+        margin-top: 255px; /* Brings it down */
+    }
+
+    .rf-cards-scroller-itemview {
+        width: 75vw; /* Almost full width */
+    }
+
+    .rs-cards-shelf-mainheader {
+        font-size: 23px;
+        white-space: normal;
+    }
+
+    .card-footer {
+        font-size: 12px;
+    }
+
+    .rf-ccard-overlay .first-txt {
+        font-size: 1.3em;
+    }
+    
     .rf-ccard-overlay .second-txt {
         font-size: 0px;
     }
