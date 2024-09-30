@@ -22,6 +22,11 @@ body {
     background-clip: text;
     color: transparent;
 }
+.grad3 {
+    background-image: linear-gradient(45deg, #eba99f 30%, #6372c0 100%);
+    background-clip: text;
+    color: transparent;
+}
 
 /* Intro */
 .intro-message {
@@ -231,14 +236,8 @@ body {
     }
 }
 
-@media (max-width: 970px) {
-    .rs-cards-shelf-mainheader {
-        white-space: nowrap;
-    }
-}
-
 /* For screens 740px and smaller */
-@media (max-width: 740px) {
+@media (max-width: 633px) {
     .intro-message {
         position: absolute;
         right: 0px;
@@ -260,6 +259,7 @@ body {
         width: 0;
         height: 0;
     }
+    
 }
 
 @media (max-width: 480px) {
