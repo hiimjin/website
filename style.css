@@ -25,16 +25,14 @@ body {
 
 /* Intro */
 .intro-message {
-    position: absolute;
-    left: 1015px;
-    top: 85px;
-    max-width: 2000px;
+    position: relative;
+    margin: 0px; /* Add some margin */
+    max-width: 90%; /* Adjust max-width */
     text-align: left;
 }
 
 .intro-message h1 {
-    display: block;
-    font-size: 50px;
+    font-size: 4vw;
     line-height: 1.2;
     white-space: nowrap;
 }
@@ -132,9 +130,10 @@ body {
 
 .rf-cards-scroller-itemview {
     flex: 0 0 auto; /* Prevent items from growing or shrinking */
-    min-width: 450px;
+    width: 80vw; /* 80% of the viewport width */
     max-width: 450px;
-    height: 330px;
+    height: auto; /* Let the height adjust based on content */
+
     background-color: transparent;
     border-radius: 10px;
     position: relative;
@@ -155,7 +154,7 @@ body {
 }
 
 .rf-ccard-img-full-wrapper img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
 }
@@ -253,5 +252,45 @@ body {
         font-size: 50px;
         line-height: 1.2;
         white-space: nowrap;
+    }
+}
+
+/* Hide buttons on small screens or adjust their size */
+@media (max-width: 480px) {
+    .scroll-button {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-message h1 {
+        font-size: 31px;
+        white-space: normal;
+    }
+
+    .rs-cards-shelf {
+        margin-top: 300px; /* Brings it down */
+    }
+
+    .rf-cards-scroller-itemview {
+        width: 80vw; /* Almost full width */
+    }
+
+    .rs-cards-shelf-mainheader {
+        font-size: 24px;
+        white-space: normal;
+    }
+
+    .card-footer {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 450px) {
+    .rf-ccard-overlay .second-txt {
+        font-size: 0px;
     }
 }
