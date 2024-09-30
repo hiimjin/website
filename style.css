@@ -258,7 +258,10 @@ body {
 /* Hide buttons on small screens or adjust their size */
 @media (max-width: 480px) {
     .scroll-button {
-        display: none !important;
+        display: none;
+        visibility: hidden;
+        width: 0;
+        height: 0;
     }
 
     .intro-message h1 {
@@ -288,9 +291,6 @@ body {
 }
 
 @media (max-width: 411px) {
-    .scroll-button {
-        display: none !important;
-    }
 
     .intro-message h1 {
         font-size: 27px;
