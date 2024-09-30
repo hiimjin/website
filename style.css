@@ -260,9 +260,7 @@ body {
     .scroll-button {
         display: none;
     }
-}
 
-@media (max-width: 480px) {
     .intro-message h1 {
         font-size: 31px;
     }
@@ -290,6 +288,10 @@ body {
 }
 
 @media (max-width: 411px) {
+    .scroll-button {
+        display: none;
+    }
+
     .intro-message h1 {
         font-size: 27px;
         margin-left: -40px;
