@@ -258,10 +258,7 @@ body {
 /* Hide buttons on small screens or adjust their size */
 @media (max-width: 480px) {
     .scroll-button {
-        width: 30px;
-        height: 30px;
-        font-size: 18px;
-        padding: 5px;
+        display: none;
     }
 }
 
@@ -296,14 +293,6 @@ body {
     .intro-message h1 {
         font-size: 27px;
         margin-left: -40px;
-    }
-
-    .scroll-button {
-        transform: translateY(-100%);
-    }
-
-    .left-button {
-        left: 55px;
     }
 
     .rs-cards-shelf {
