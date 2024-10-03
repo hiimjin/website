@@ -37,6 +37,7 @@ body {
 .intro-message {
     position: relative;
     margin: 0px; /* Add some margin */
+    margin-top: -30px;
     max-width: 90%; /* Adjust max-width */
     text-align: left;
 }
@@ -76,7 +77,7 @@ body {
 /* Cards */
 .rs-cards-shelf {
     max-width: 100%;
-    margin-top: 385px; /* Brings it down */
+    margin-top: 365px; /* Brings it down */
 }
 
 .as-l-container.rs-cards-shelf-header {
@@ -241,6 +242,20 @@ body {
     }
 }
 
+@media (max-width: 927px) {
+    .rs-cards-shelf {
+        margin-top: 350px; /* Brings it down */
+    }
+
+    .rs-cards-shelf-mainheader {
+        white-space: nowrap;
+    }
+
+    .custombr {
+        display: inline;
+    }
+}
+
 @media (max-width: 633px) {
     .intro-message {
         position: absolute;
@@ -263,14 +278,6 @@ body {
         width: 0;
         height: 0;
     }
-
-    .rs-cards-shelf-mainheader {
-        white-space: nowrap;
-    }
-
-    .custombr {
-        display: inline;
-    }
     
 }
 
@@ -281,7 +288,7 @@ body {
     }
 
     .rs-cards-shelf {
-        margin-top: 300px; /* Brings it down */
+        margin-top: 230px; /* Brings it down */
         margin-left: -40px;
         max-width: 150%;
     }
@@ -310,7 +317,7 @@ body {
     }
 
     .rs-cards-shelf {
-        margin-top: 255px; /* Brings it down */
+        margin-top: 200px; /* Brings it down */
     }
 
     .rf-cards-scroller-itemview {
