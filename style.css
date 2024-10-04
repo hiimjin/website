@@ -37,13 +37,14 @@ body {
 .intro-message {
     position: relative;
     margin: 0px; /* Add some margin */
+    top: 85px;
     margin-top: -30px;
     max-width: 90%; /* Adjust max-width */
-    text-align: left;
+    text-align: right;
 }
 
 .intro-message h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     line-height: 1.2;
     white-space: nowrap;
 }
@@ -77,7 +78,7 @@ body {
 /* Cards */
 .rs-cards-shelf {
     max-width: 100%;
-    margin-top: 365px; /* Brings it down */
+    margin-top: 165px; /* Brings it down */
 }
 
 .as-l-container.rs-cards-shelf-header {
@@ -87,7 +88,7 @@ body {
 .rs-cards-shelf-mainheader {
     padding-left: 30px;
     padding-bottom: 0px; /* Adds some space below the main header */
-    font-size: 34px;
+    font-size: 2vw;
 }
 
 .rs-cards-shelf-secondaryheader {
@@ -141,8 +142,8 @@ body {
 
 .rf-cards-scroller-itemview {
     flex: 0 0 auto; /* Prevent items from growing or shrinking */
-    width: 80vw; /* 80% of the viewport width */
-    max-width: 450px;
+    width: 27vw; /* 80% of the viewport width */
+    max-width: 650px;
     height: auto; /* Let the height adjust based on content */
 
     background-color: transparent;
@@ -239,6 +240,19 @@ body {
         display: block;
         font-size: 50px;
         line-height: 1.2;
+    }
+
+    .rs-cards-shelf-mainheader {
+        font-size: 34px;
+    }
+
+    .rs-cards-shelf {
+        margin-top: 365px; /* Brings it down */
+    }
+
+    .rf-cards-scroller-itemview {
+        width: 80vw; /* 80% of the viewport width */
+        max-width: 450px;
     }
 }
 
